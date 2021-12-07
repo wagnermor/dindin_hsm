@@ -29,16 +29,18 @@ fetch(url,{
     titulos.push(getCursos.data[i].title)
     titulos.push(getCursos.data[i].description)
     cursos.options[cursos.options.length] = new Option(getCursos.data[i].title);
+    img.innerHTML = "img src='getCursos.data[i].thumb_img"
+    // h2.innerHTML = 
+    wrapp.appendChild(document.createElement('img')).src='getCursos.data[i].thumb_img'
   }
   console.log(getCursos.data);
   
   console.log(cursos.value);
   
-});
-
   const btn_pesquisa = document.getElementById("bnt_pesquisa");
   btn_pesquisa.addEventListener("click", function() {
     for(let i =0; i < getCursos.data.length; i++) {
       
     }
-})
+  })
+});
