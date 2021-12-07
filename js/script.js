@@ -1,7 +1,7 @@
 let teste;
 const url = `https://test.godigibee.io/pipeline/gama/v1/apigrupo3?rota=cursos`;
 
-let mapCursos;
+let getCursos;
 
 let retorno = [];
 fetch(url,{
@@ -12,19 +12,33 @@ fetch(url,{
 })
 .then((res) => res.json())
 .then((dados) => {
+  let pathImg = [];
   let titulos = [];
-  mapCursos = dados
-  // console.log(mapCursos.data)
-  const cursos = document.getElementById("cursos");
-  for(let i = 0; i < mapCursos.data.length; i++) {
-    titulos.push(mapCursos.data[i].title)
-    cursos.options[cursos.options.length] = new Option(mapCursos.data[i].title);
-  }
-  console.log(titulos);
-  
-  const bnt_pesquisa = document.getElementById("bnt_pesquisa");
-  addEventListener(onclick, () => {
+  let descricao = [];
+  getCursos = dados
 
-  })
+  const img = document.createElement('img')
+  const h2 = document.createElement('h2');
+  const p = document.createElement('p');
+  
+  const wrap = document.getElementById("wrapp")
+  const cursos = document.getElementById("cursos");
+
+  for(let i = 0; i < getCursos.data.length; i++) {
+    titulos.push(getCursos.data[i].thumb_img)
+    titulos.push(getCursos.data[i].title)
+    titulos.push(getCursos.data[i].description)
+    cursos.options[cursos.options.length] = new Option(getCursos.data[i].title);
+  }
+  console.log(getCursos.data);
+  
+  const btn_pesquisa = document.getElementById("bnt_pesquisa");
+  btn_pesquisa.addEventListener("click", () => {
+    for(let i =0; i < getCursos.data.length; i++) {
+      
+    }
+    console.log(cursos.value);
+
+  });
 
 })
