@@ -1,7 +1,7 @@
 # API Documentação_HSM
 
 ## Introdução
-A API para consulta cursos e posts
+A API para consulta de cursos e postagens para a Plataforma de Cursos de Educação Finaceira DINDIN.
 
 ## Visão Geral
 API gerada na plataforma de desenvolvimento da DIGIBEE.
@@ -12,8 +12,7 @@ A integração é realizada através de serviços disponibilizados como Web S
 * Consulta de todos os cursos;
 * Consulta de todos os posts;
 * Consulta de cursos por ID;
-* Log de Erro: Curso não encontrado;
-* Log de Erro: Post não encontrado;
+* Log de Erro: Parâmetros Incorretos.
 
 ## Endpoint e Parâmetros
 
@@ -22,11 +21,19 @@ A integração é realizada através de serviços disponibilizados como Web S
 <https://test.godigibee.io/pipeline/gama/v1/apigrupo3>
 
 ### Parâmetros:
-#### Foi utilizado o parâmetro Rota e dentro dele são utilizadas 3 formas de consultas:
+
+#### Parâmetro utilizado: 
+* Rota
+#### Formas de consultas por valores:
 
  * cursos
+</br>Retorna a consulta de todos os cursos no Banco de dados.
+ 
  * posts
- * cursosId
+ </br>Retorna a consulta de toda as postagens no Banco de dados.
+  
+ * cursosId 
+ </br>Retorna a consulta de um cursos no Banco de dados. É preciso declarar o id do curso para executar a consulta.
 
 ## Autenticação
 Para consulta de cursos e postagens
