@@ -32,13 +32,13 @@ fetch(url,{
   }
   console.log(getCursos.data);
   
+  console.log(cursos.value);
+  
+});
+
   const btn_pesquisa = document.getElementById("bnt_pesquisa");
-  btn_pesquisa.addEventListener("click", () => {
+  btn_pesquisa.addEventListener("click", function() {
     for(let i =0; i < getCursos.data.length; i++) {
       
     }
-    console.log(cursos.value);
-
-  });
-
 })
