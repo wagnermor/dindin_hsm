@@ -24,16 +24,19 @@ A integração é realizada através de serviços disponibilizados como Web S
 
 #### Parâmetro utilizado: 
 * Rota
-#### Formas de consultas por valores:
+#### Formas de consultas pelos valores:
 
- * cursos
-</br>Retorna a consulta de todos os cursos no Banco de dados.
+1. _cursos_</br>
+
+Retorna a consulta de todos os cursos no Banco de dados.
  
- * posts
- </br>Retorna a consulta de toda as postagens no Banco de dados.
+ 2. _posts_</br>
+
+Retorna a consulta de toda as postagens no Banco de dados.
   
- * cursosId 
- </br>Retorna a consulta de um cursos no Banco de dados. É preciso declarar o id do curso para executar a consulta.
+ 3. _cursosId_</br>
+
+Retorna a consulta de um cursos no Banco de dados. É preciso declarar o id do curso para executar a consulta.
 
 ## Autenticação
 Para consulta de cursos e postagens
